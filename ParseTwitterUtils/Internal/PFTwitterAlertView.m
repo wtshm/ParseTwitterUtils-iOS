@@ -29,7 +29,7 @@
     if ([UIAlertController class] != nil) {
         __block UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                                          message:message
-                                                                                  preferredStyle:UIAlertControllerStyleAlert];
+                                                                                  preferredStyle:UIAlertControllerStyleActionSheet];
 
         void (^alertActionHandler)(UIAlertAction *) = [^(UIAlertAction *action) {
             if (completion) {
